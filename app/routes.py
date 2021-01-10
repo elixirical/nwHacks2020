@@ -3,7 +3,7 @@ from app import app
 
 @app.route('/')
 @app.route('/index')
-def hello():
+def index():
 
     import pygal
     import csv
@@ -206,9 +206,7 @@ def vancouver():
 
     manchart = Mchart.render_data_uri()
 
-    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart)
-
-    return render_template('city.html', city='Vancouver')
+    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart, city='Vancouver')
 
 @app.route('/montreal')
 def montreal():
@@ -312,9 +310,7 @@ def montreal():
 
     manchart = Mchart.render_data_uri()
 
-    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart)
-
-    return render_template('city.html', city='Montreal')
+    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart, city='Montreal')
 
 @app.route('/toronto')
 def toronto():
@@ -418,9 +414,7 @@ def toronto():
 
     manchart = Mchart.render_data_uri()
 
-    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart)
-
-    return render_template('city.html', city='Toronto')
+    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart, city='Toronto')
 
 @app.route('/ottawa')
 def ottawa():
@@ -524,9 +518,7 @@ def ottawa():
 
     manchart = Mchart.render_data_uri()
 
-    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart)
-
-    return render_template('city.html', city='Ottawa')
+    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart, city='Ottawa')
 
 @app.route('/calgary')
 def calgary():
@@ -630,9 +622,7 @@ def calgary():
 
     manchart = Mchart.render_data_uri()
 
-    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart)
-
-    return render_template('city.html', city='Calgary')
+    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart, city='Calgary')
 
 @app.route('/edmonton')
 def edmonton():
@@ -736,9 +726,7 @@ def edmonton():
 
     manchart = Mchart.render_data_uri()
 
-    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart)
-
-    return render_template('city.html', city='Edmonton')
+    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart, city='Edmonton')
 
 @app.route('/regina')
 def regina():
@@ -842,9 +830,7 @@ def regina():
 
     manchart = Mchart.render_data_uri()
 
-    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart)
-
-    return render_template('city.html', city='Regina')
+    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart, city='Regina')
 
 @app.route('/winnipeg')
 def winnipeg():
@@ -948,9 +934,7 @@ def winnipeg():
 
     manchart = Mchart.render_data_uri()
 
-    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart)
-
-    return render_template('city.html', city='Winnipeg')
+    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart, city='Winnipeg')
 
 @app.route('/saskatoon')
 def saskatoon():
@@ -1054,6 +1038,4 @@ def saskatoon():
 
     manchart = Mchart.render_data_uri()
 
-    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart)
-
-    return render_template('city.html', city='Saskatoon')
+    return render_template('city.html', chart = chart, recchart = recchart, manchart = manchart, city='Saskatoon')

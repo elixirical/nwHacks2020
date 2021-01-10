@@ -1,0 +1,32 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Test</title>
+  </head>
+
+  <body>
+  <h1>The impact of mask usage on COVID-19 cases in major Canadian cities</h1>
+
+  <embed type="image/svg+xml" src= {{ chart|safe }} />
+  <div class="belowbigchart">
+
+  Masks have become a contentious issue in the current day and age. Some people refuse to leave their homes without donning one, and others violently despise even strangers wearing them. Many experts and studies have come out claiming that masks are beneficial for reducing COVID-19 (and other respiratory disease) spread and saving lives, and we certainly do not disagree. However, being able to see the effects of mask usage visually can ultimately drive the point home for those who deny their effectiveness. There are many videos showing how masks prevent microdroplet spread, however, we wanted to see if we could see th effects of mask usage on a more macro scale. To that end, we chose to graph several major Canadian cities along with their date of mask bylaw introduction to see if a noticeable difference can be observed following mask bylaw introduction. The above graph shows the daily new cases in 9 major Canadian cities: Montréal, Vancouver, Toronto, Regina, Saskatoon, Ottawa, Winnipeg, Calgary, and Edmonton up to today.
+  </div>
+
+  <div class="grid-container">
+      <div class="recommendedBox">
+          <embed type="image/svg+xml" src= {{ recchart|safe }} />
+          <div class="sideBySideLeftText">As can be seen, the introduction of masking recommendations coincided with a marked decrease in new COVID-19 cases in these major Canadian cities. However, some of the case decreases can be seen to be already happening prior to the introduction of masking recommendations.</div>
+      </div>
+
+      <div class="mandatoryBox">
+          <embed type="image/svg+xml" src= {{ manchart|safe }} />
+          <div class="sideBySideRightText">The introduction of municipal bylaws enforcing mask wearing did little to effectnew cases. This could be because many citizens already regularly wear masks, and bylaws did little to effect that number. Instead, other factors are responsible for increased or decreased cases, not masks.</div>
+      </div>
+
+  </div>
+
+  </body>
+
+</html>

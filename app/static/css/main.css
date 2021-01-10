@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+  background-color: black;
+  color: #B1B1B1;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  text-justify: auto;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+h1 {
+  background-color: black;
+  color: #B1B1B1;
+  font-family: 'Roboto Mono', serif;
+  text-align: center;
+}
+
+.belowbigchart {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.sideBySideLeftText {
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.sideBySideRightText {
+  margin-left: 20px;
+  margin-top: 50px;
+}

@@ -1,8 +1,35 @@
 <html>
     <head>
-        <title>Masks and COVID in {{city}}</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+      <title>{{city}}: COVID-19 & Masks</title>
     </head>
     <body>
     <h1>{{city}}</h1>
+    <embed type="image/svg+xml" src= {{ chart|safe }} />
+    {{text1}}
+    </div>
+
+    <div class="grid-container">
+        <div class="recommendedBox">
+            <embed type="image/svg+xml" src= {{ recchart|safe }} />
+            <div class="sideBySideLeftText">{{text2}}</div>
+        </div>
+
+        <div class="mandatoryBox">
+            <embed type="image/svg+xml" src= {{ manchart|safe }} />
+            <div class="sideBySideRightText">{{text3}}</div>
+        </div>
+    </div>
+
+    <h3>View other cities:</h3>
+    <a href="{{ url_for('vancouver') }}">Vancouver</a> |
+    <a href="{{ url_for('toronto') }}">Toronto</a> |
+    <a href="{{ url_for('ottawa') }}">Ottawa</a> |
+    <a href="{{ url_for('montreal') }}">Montreal</a> |
+    <a href="{{ url_for('calgary') }}">Calgary</a> |
+    <a href="{{ url_for('edmonton') }}">Edmonton</a> |
+    <a href="{{ url_for('regina') }}">Regina</a> |
+    <a href="{{ url_for('saskatoon') }}">Saskatoon</a> |
+    <a href="{{ url_for('winnipeg') }}">Winnipeg</a>
     </body>
 </html>

@@ -18,6 +18,13 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  background-color: black;
+  color: #B1B1B1;
+  font-family: 'Roboto Mono', serif;
+  text-align: left;
+}
+
 .belowbigchart {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -37,4 +44,12 @@ h1 {
 .sideBySideRightText {
   margin-left: 20px;
   margin-top: 50px;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
 }

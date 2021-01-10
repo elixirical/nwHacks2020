@@ -2,7 +2,7 @@
 
   <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <title>Test</title>
+    <title>COVID-19 & Masks</title>
   </head>
 
   <body>
@@ -24,8 +24,18 @@
           <embed type="image/svg+xml" src= {{ manchart|safe }} />
           <div class="sideBySideRightText">The introduction of municipal bylaws enforcing mask wearing did little to effectnew cases. This could be because many citizens already regularly wear masks, and bylaws did little to effect that number. Instead, other factors are responsible for increased or decreased cases, not masks.</div>
       </div>
-
   </div>
+
+  <h3>View cities individually:</h3>
+  <a href="{{ url_for('vancouver') }}">Vancouver</a> |
+  <a href="{{ url_for('toronto') }}">Toronto</a> |
+  <a href="{{ url_for('ottawa') }}">Ottawa</a> |
+  <a href="{{ url_for('montreal') }}">Montreal</a> |
+  <a href="{{ url_for('calgary') }}">Calgary</a> |
+  <a href="{{ url_for('edmonton') }}">Edmonton</a> |
+  <a href="{{ url_for('regina') }}">Regina</a> |
+  <a href="{{ url_for('saskatoon') }}">Saskatoon</a> |
+  <a href="{{ url_for('winnipeg') }}">Winnipeg</a>
 
   </body>
 
